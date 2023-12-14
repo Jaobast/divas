@@ -1,0 +1,75 @@
+body{
+    background: url('../img/lana_del_rey_wallpaper.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 23%;
+    height: 100vh;
+    margin: 0;
+}
+
+#choose{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.h1{
+    font-size: 20pt;
+    padding: 5px;
+    color: rgb(236, 220, 211);
+}
+
+.lana_button{
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: url('../img/lana_del_rey_profil.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    border: none;
+    color: rgb(129, 31, 31, 0);
+    position:relative;
+    top: 50px;
+}
+
+#divas{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+button{
+    border:none;
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+    font-size: 8pt;
+}
+
+.h1:hover{
+    font-size: 22pt;
+}
+
+.lana_button:hover{
+    color:rgb(255, 0, 0, 0);
+}
+
+button:hover{
+    color: rgb(193, 4, 4);
+    transform: translateY(-5px);
+    cursor:pointer;
+    font-size: 12pt;
+}
+
+.yourArtist{
+    text-align: center;
+    position: absolute;
+    bottom: 7%;
+    left: calc(50% - 135px);
+    transform: translateX(-50%);
+}

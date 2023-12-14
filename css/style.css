@@ -1,0 +1,61 @@
+body{
+    height: 100vh;
+    margin: 0;
+}
+#choose{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.h1{
+    font-size: 20pt;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.yourChoise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:40%;
+}
+
+#gif{
+    width: 150px;
+    height: auto;
+    border: none;
+}
+
+#divas{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+button{
+    border:none;
+    background-color: rgb(0, 0, 0, 0);
+    color: black;
+    font-size: 8pt;
+}
+
+.h1:hover{
+    font-size: 22pt;
+}
+
+button:hover{
+    color: rgb(230, 174, 228);
+    transform: translateY(-5px);
+    cursor:pointer;
+    font-size: 12pt;
+}
