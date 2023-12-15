@@ -3,10 +3,13 @@ let artist = "";
 function changeArtist(newArtist) {
     artist = newArtist;
     const artistCss = "./css/style_" + artist + ".css";
-    console.log(artistCss);
+    document.getElementById('dynamic-css').setAttribute("href", artistCss);
 
-    const link = document.getElementById('dynamic-css');
-    link.setAttribute("href", artistCss);
+    const el = document.querySelector(".yourArtist");
+    const artistButton = document.querySelector("." + artist + "_button");
+    
+    el.style.bottom = (artistButton.offsetTop + artistButton.offsetHeight - 65) + "px";
+    el.style.left = (artistButton.offsetLeft + artistButton.offsetWidth / 2 - el.offsetWidth / 2) + "px";
 
     let show;
     if (artist) {
@@ -19,6 +22,7 @@ function changeArtist(newArtist) {
     changeGif.setAttribute("src", "");
 }
 
+
 function yourArtist() {
     const backHome = document.getElementById("dynamic-css");
     backHome.setAttribute("href","./css/style.css")
@@ -30,7 +34,6 @@ function yourArtist() {
     if (artist){
       changeGif.setAttribute("src", "./gif/" + artist + ".gif");  
     };
-
 }
 
 function goBack(){
@@ -42,6 +45,4 @@ function goBack(){
     
     const changeGif = document.getElementById("gif");
     changeGif.setAttribute("src", "");
-
-
 }
