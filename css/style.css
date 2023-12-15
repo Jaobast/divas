@@ -76,8 +76,11 @@ button:hover{
         font-size: 12pt;
     }
     #gif{
-        width: 300px;
+        width: 400px;
         height: auto;
         border: none;
+    }
+    #yourChoise{
+        font-size: 16pt;
     }
 }
