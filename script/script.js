@@ -8,7 +8,7 @@ function changeArtist(newArtist) {
     const el = document.querySelector(".yourArtist");
     const artistButton = document.querySelector("." + artist + "_button");
     
-    el.style.bottom = (artistButton.offsetTop + artistButton.offsetHeight - 65) + "px";
+    el.style.bottom = `calc(${artistButton.offsetTop + artistButton.offsetHeight}px - 8vh)`;
     el.style.left = (artistButton.offsetLeft + artistButton.offsetWidth / 2 - el.offsetWidth / 2) + "px";
 
     let show;
