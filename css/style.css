@@ -25,6 +25,10 @@ body{
     bottom:40%;
 }
 
+#yourChoise{
+    font-size: 12pt;
+}
+
 #gif{
     width: 150px;
     height: auto;
