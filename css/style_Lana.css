@@ -13,7 +13,8 @@ body{
 }
 
 .h1{
-    font-size: 20pt;
+    font-size: 25pt;
+    margin: 20px;
     padding: 5px;
     color: rgb(236, 220, 211);
 }
@@ -29,7 +30,7 @@ body{
     border: none;
     color: rgb(129, 31, 31, 0);
     position:relative;
-    top: 50px;
+    top:30px;
 }
 
 #divas{
@@ -48,11 +49,12 @@ button{
     border:none;
     background-color: rgb(0, 0, 0, 0);
     color: white;
-    font-size: 8pt;
+    font-size: 12pt;
+    padding: 10px;
 }
 
 .h1:hover{
-    font-size: 22pt;
+    font-size: 27pt;
 }
 
 .lana_button:hover{
@@ -63,7 +65,7 @@ button:hover{
     color: rgb(193, 4, 4);
     transform: translateY(-5px);
     cursor:pointer;
-    font-size: 12pt;
+    font-size: 18pt;
 }
 
 .yourArtist{

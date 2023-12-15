@@ -9,7 +9,8 @@ body{
 }
 
 .h1{
-    font-size: 20pt;
+    font-size: 25pt;
+    margin: 20px;
     padding: 5px;
     color: rgb(0, 0, 0);
 }
@@ -46,16 +47,33 @@ button{
     border:none;
     background-color: rgb(0, 0, 0, 0);
     color: black;
-    font-size: 8pt;
+    font-size: 12pt;
 }
 
 .h1:hover{
-    font-size: 22pt;
+    font-size: 27pt;
 }
 
 button:hover{
     color: rgb(230, 174, 228);
     transform: translateY(-5px);
     cursor:pointer;
-    font-size: 12pt;
+    font-size: 18pt;
+}
+
+@media (hover: none) {
+    .h1:hover{
+        font-size: 25pt;
+    }
+    button:hover{
+        color: black;
+        transform: translateY(0px);
+        cursor:none;
+        font-size: 12pt;
+    }
+    #gif{
+        width: 250px;
+        height: auto;
+        border: none;
+    }
 }

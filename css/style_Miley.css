@@ -1,7 +1,7 @@
 body{
     background: url('../img/miley_cyrus_wallpaper.jpg') no-repeat;
     background-size: cover;
-    background-position: 60% 10%;
+    background-position: 50% 10%;
     height: 100vh;
     margin: 0;
 }
@@ -13,7 +13,8 @@ body{
 }
 
 .h1{
-    font-size: 20pt;
+    font-size: 25pt;
+    margin: 20px;
     padding: 5px;
     color: rgb(0, 0, 0);
 }
@@ -29,7 +30,7 @@ body{
     border: none;
     color: rgb(129, 31, 31, 0);
     position:relative;
-    top: 50px;
+    top: 30px;
 }
 
 #divas{
@@ -48,11 +49,12 @@ button{
     border:none;
     background-color: rgb(0, 0, 0, 0);
     color: white;
-    font-size: 8pt;
+    font-size: 12pt;
+    padding: 10px;
 }
 
 .h1:hover{
-    font-size: 22pt;
+    font-size: 27pt;
 }
 
 .miley_button:hover{
@@ -63,8 +65,7 @@ button:hover{
     color: rgb(255, 251, 0);
     transform: translateY(-5px);
     cursor:pointer;
-    font-size: 12pt;
-    position: relative;
+    font-size: 18pt;
 }
 
 .yourArtist{
