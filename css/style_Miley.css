@@ -2,8 +2,9 @@ body {
     background: url('../img/miley_cyrus_wallpaper.jpg') no-repeat;
     background-size: cover;
     background-position: 50% 10%;
-    max-height: 100vh;
+    height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 #choose {
@@ -77,4 +78,10 @@ button:hover {
 .pickMiley {
     position: relative;
     top: 5vw;
+}
+
+@media (max-width: 800px) {
+    body{
+        max-height: 100vh;
+    }
 }
