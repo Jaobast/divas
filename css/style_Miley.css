@@ -1,6 +1,7 @@
 body {
     background: url('../img/miley_cyrus_wallpaper.jpg') no-repeat;
     background-size: cover;
+    background-position: 50% 10%;
     height: 100vh;
     margin: 0;
 }
@@ -29,7 +30,7 @@ body {
     border: none;
     color: rgba(129, 31, 31, 0);
     position: relative;
-    top: 3vw;
+    top: 5vw;
 }
 
 #divas {
@@ -75,11 +76,5 @@ button:hover {
 
 .pickMiley {
     position: relative;
-    top: 3vw;
-}
-
-@media screen {
-    body{
-        max-height: 100vh;
-    }
+    top: 5vw;
 }
