@@ -6,6 +6,11 @@ body {
     margin: 0;
 }
 
+body, html {
+    overflow: hidden;
+    height: 100%;
+}
+
 #choose {
     display: flex;
     flex-direction: row;
