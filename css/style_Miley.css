@@ -1,9 +1,12 @@
+html{
+    height: -webkit-fill-available;
+}
+
 body {
     background: url('../img/miley_cyrus_wallpaper.jpg') no-repeat;
     background-size: cover;
     background-position: 50% 10%;
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     margin: 0;
 }
 
