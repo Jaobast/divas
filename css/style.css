@@ -36,12 +36,12 @@ body{
 }
 
 #divas{
-    position:absolute;
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: end;
-    bottom: 15%;
+    align-items: flex-end;
+    bottom: 15vh;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -51,7 +51,8 @@ button{
     border:none;
     background-color: rgb(0, 0, 0, 0);
     color: black;
-    font-size: 12pt;
+    font-size: 15pt;
+    padding: 1vw;
 }
 
 .h1:hover{
@@ -60,9 +61,9 @@ button{
 
 button:hover{
     color: rgb(230, 174, 228);
-    transform: translateY(-5px);
-    cursor:pointer;
-    font-size: 18pt;
+    transform: translateY(-0.5vw);
+    cursor: pointer;
+    font-size: 17pt;
 }
 
 
@@ -83,6 +84,6 @@ button:hover{
         border: none;
     }
     #yourChoise{
-        font-size: 16pt;
+        font-size: 15pt;
     }
 }
