@@ -1,14 +1,8 @@
 body {
     background: url('../img/miley_cyrus_wallpaper.jpg') no-repeat;
     background-size: cover;
-    background-position: 50% 10%;
     height: 100vh;
     margin: 0;
-}
-
-body, html {
-    overflow: hidden;
-    height: 100%;
 }
 
 #choose {
