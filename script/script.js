@@ -5,17 +5,19 @@ function changeArtist(newArtist) {
     const artistCss = "./css/style_" + artist + ".css";
     document.getElementById('dynamic-css').setAttribute("href", artistCss);
 
-    const el = document.querySelector(".yourArtist");
-    const artistButton = document.querySelector("." + artist + "_button");
-    
-    el.style.bottom = `calc(${artistButton.offsetTop + artistButton.offsetHeight}px - 8vh)`;
-    el.style.left = (artistButton.offsetLeft + artistButton.offsetWidth / 2 - el.offsetWidth / 2) + "px";
-
     let show;
     if (artist) {
         show = "pick " + artist;
     }
-    document.getElementById("yourArtist").innerHTML = show;
+
+    document.querySelectorAll('[class^="pick"]').forEach(button => {
+        if (button.classList.contains("pick" + artist)) {
+            button.innerHTML = show;
+        } else {
+            button.innerHTML = "";
+        }
+    });
+
     document.getElementById("yourChoise").innerHTML = "";
     
     const changeGif = document.getElementById("gif");
@@ -23,12 +25,13 @@ function changeArtist(newArtist) {
 }
 
 
+
 function yourArtist() {
     const backHome = document.getElementById("dynamic-css");
     backHome.setAttribute("href","./css/style.css")
 
     document.getElementById("yourChoise").innerHTML = "you chose " + artist;
-    document.getElementById("yourArtist").innerHTML = "";
+    document.querySelector(".pick" + artist).innerHTML = "";
 
     const changeGif = document.getElementById("gif");
     if (artist){
@@ -41,7 +44,7 @@ function goBack(){
     backHome.setAttribute("href","./css/style.css")
 
     document.getElementById("yourChoise").innerHTML = "";
-    document.getElementById("yourArtist").innerHTML = "";
+    document.querySelector(".pick" + artist).innerHTML = "";
     
     const changeGif = document.getElementById("gif");
     changeGif.setAttribute("src", "");
