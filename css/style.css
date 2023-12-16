@@ -1,6 +1,14 @@
+*{
+    margin: 0;
+}
+html{
+    height: -webkit-fill-available;
+}
+
 body{
     max-height: 100vh;
     margin: 0;
+    height: -webkit-fill-available;
 }
 #choose{
     display: flex;
